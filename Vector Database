@@ -1,0 +1,50 @@
+Vector Database
+
+* Vector is basically list of components with some dimensionality.	
+* Each Component has specific magnitude and direction(Axis and Dimension)
+
+Types of Vectors:
+	1. Dense
+		* Most Common Types
+		* Non Zero Values ===> [1, -2, 4]
+		* Holds some amount of information
+	2. Sparse
+		* Zero component or elements
+		* Used when the data has lot of dimensions having empty or negligible values
+		* Common for word embeddings ===> [1, 2, 1, 1, 0, 0, 0]
+
+Steps to create a vector store:
+	1. FAISS
+	2. Chroma DB
+
+	Applications:
+		* Machine Learning 
+		* NLP
+		* Recommendation Engine
+
+	Steps:
+		* Programming Language ==> C, C++, Java, Python
+		* Data Structure ==> In Memory(our target),
+							 Important for efficiency
+		* Storage Format ==> Storing the vectors in memory
+							 Arrays, List, Custom Data Structure
+		* Loading the vector 
+		* Indexing ==> Search faster, For efficient retrieval of vector
+			Techniques:
+				1. Creating Hash Maps
+				2. Data Structures like KD-Trees, Ball Trees..etc for speeding up the retrieval process
+		* Querying ==> Implement methods or fuctions
+				1. Similarity
+				2. Range
+				3, Specific Identifiers
+		* Update Vectors ==> Add, Modify, Delete
+		* Memory Management 
+		* Serialization and Persistance
+			* Persist the vector store  to the disk
+			* Implement serialize and de-serialize to save and load the vector store
+		* Testing and Optimization
+		* Documentation 
+		* Scaling
+			* Distributed Computing
+			* Sca;ing techniques
+
